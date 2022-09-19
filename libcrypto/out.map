@@ -1,0 +1,56 @@
+# compiler: R8
+# compiler_version: 3.2.60
+# common_typos_disable
+# {"id":"com.android.tools.r8.mapping","version":"2.0"}
+# pg_map_id: 4ec7a86
+# pg_map_hash: SHA-256 4ec7a86a1a5c2fe903784beb4dd746bfe980004882a7c943909d37be7bf6963b
+br.com.libcrypto.BuildConfig -> br.com.libcrypto.BuildConfig:
+    1:1:void <init>():6:6 -> <init>
+br.com.libcrypto.Crypto -> br.com.libcrypto.Crypto:
+# {"id":"sourceFile","fileName":"Crypto.kt"}
+    br.com.libcrypto.DataProtection dataProtection -> a
+    1:1:void <clinit>():14:14 -> <clinit>
+    1:1:void <init>():5:5 -> <init>
+    1:1:java.lang.String decryptAES(java.lang.String):27:27 -> decryptAES
+    1:1:java.lang.String encryptAES(java.lang.String):20:20 -> encryptAES
+    1:1:java.lang.String encryptRSA(java.lang.String,java.lang.String):34:34 -> encryptRSA
+    1:1:java.lang.String toString():8:8 -> toString
+br.com.libcrypto.DataProtection -> br.com.libcrypto.DataProtection:
+# {"id":"sourceFile","fileName":"DataProtection.kt"}
+    javax.crypto.spec.IvParameterSpec mIvParameterSpec -> d
+    java.lang.String rsa -> a
+    java.lang.String aes -> b
+    javax.crypto.spec.SecretKeySpec mSecretKeySpec -> c
+    1:4:void <init>():15:18 -> <init>
+    1:9:java.lang.String decryptAES(java.lang.String):42:50 -> decryptAES
+    10:11:java.lang.String decryptAES(java.lang.String):43:44 -> decryptAES
+    12:13:void clearValuesFromMemory():118:119 -> decryptAES
+    12:13:java.lang.String decryptAES(java.lang.String):46 -> decryptAES
+    14:21:java.lang.String decryptAES(java.lang.String):46:53 -> decryptAES
+    1:2:java.lang.String encryptAES(java.lang.String):29:30 -> encryptAES
+    3:6:javax.crypto.spec.SecretKeySpec generateSecretKey(java.lang.String):104:107 -> encryptAES
+    3:6:java.lang.String encryptAES(java.lang.String):31 -> encryptAES
+    7:7:java.lang.String encryptAES(java.lang.String):31:31 -> encryptAES
+    8:10:javax.crypto.spec.IvParameterSpec generateIvParameterSpec():111:113 -> encryptAES
+    8:10:java.lang.String encryptAES(java.lang.String):32 -> encryptAES
+    11:13:java.lang.String encryptAES(java.lang.String):32:34 -> encryptAES
+    1:53:java.security.PublicKey getPublicKey(java.lang.String):77:129 -> encryptRSA
+    1:53:java.lang.String encryptRSA(java.lang.String,java.lang.String):62 -> encryptRSA
+    54:116:java.security.PublicKey getPublicKey(java.lang.String):82:144 -> encryptRSA
+    54:116:java.lang.String encryptRSA(java.lang.String,java.lang.String):62 -> encryptRSA
+    117:117:java.security.PublicKey getPublicKey(java.lang.String):122:122 -> encryptRSA
+    117:117:java.lang.String encryptRSA(java.lang.String,java.lang.String):62 -> encryptRSA
+    118:120:java.security.PublicKey getPublicKey(java.lang.String):86:88 -> encryptRSA
+    118:120:java.lang.String encryptRSA(java.lang.String,java.lang.String):62 -> encryptRSA
+    121:121:java.security.PublicKey getPublicKey(java.lang.String):87:87 -> encryptRSA
+    121:121:java.lang.String encryptRSA(java.lang.String,java.lang.String):62 -> encryptRSA
+    122:128:java.security.PublicKey getPublicKey(java.lang.String):86:92 -> encryptRSA
+    122:128:java.lang.String encryptRSA(java.lang.String,java.lang.String):62 -> encryptRSA
+    129:140:java.security.PublicKey getPublicKey(java.lang.String):84:95 -> encryptRSA
+    129:140:java.lang.String encryptRSA(java.lang.String,java.lang.String):62 -> encryptRSA
+    141:145:java.lang.String encryptRSA(java.lang.String,java.lang.String):63:67 -> encryptRSA
+    146:151:java.lang.String encryptRSA(java.lang.String,java.lang.String):65:70 -> encryptRSA
+br.com.libcrypto.StringUtils -> br.com.libcrypto.StringUtils:
+# {"id":"sourceFile","fileName":"StringUtils.kt"}
+    1:1:void <init>():5:5 -> <init>
+    1:9:java.lang.String generateRandomValue():8:16 -> generateRandomValue
