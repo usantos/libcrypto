@@ -22,7 +22,7 @@ Na classe a ser usada faça a importação da biblioteca.
   import br.com.libcrypto.Crypto
 ```
 
-## Documentação da API
+## Documentação da Biblioteca
 
 #### Encripta os dados usando AES
 
