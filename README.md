@@ -44,9 +44,9 @@ Na classe a ser usada faça a importação da biblioteca.
 
 | Parâmetro   | Tipo       | Descrição                           |
 | :---------- | :--------- | :---------------------------------- |
-| `data` | `string` | **Obrigatório**. O dado a ser decrifrado |
+| `data` | `string` | **Obrigatório**. O dado a ser decriptado |
 
-#### Retorna o dado decifrado
+#### Retorna o dado decriptado
 
 #### Decripta os dados que foi previamente encriptado com AES
 
